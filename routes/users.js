@@ -1,9 +1,23 @@
 const express = require("express");
 const router = express.Router();
+const { check, validationResult } = require("express-validator/check/index");
+const User = require("../models/User");
 
 //public
-router.post("/", (req, res) => {
-  res.send("Register a user");
-});
+router.post(
+  "/",
+  [
+    check("name", "Please add name").not().isEmpty(),
+    check("email", "Please enter a valid email").isEmail(),
+    check("password", "The password is too short").isLength({ min: 6 }),
+  ],
+  (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+    res.send(req.body);
+  }
+);
 
 module.exports = router;
