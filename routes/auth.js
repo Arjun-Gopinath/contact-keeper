@@ -5,6 +5,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const User = require("../models/User");
 const config = require("config");
+const auth = require("../middleware/auth");
 
 //public
 router.post(
@@ -57,8 +58,14 @@ router.post(
 );
 
 //private
-router.get("/", (req, res) => {
-  res.send("Get logged in user");
+router.get("/", auth, async (req, res) => {
+  try {
+    // Select the user based on id and remove password from the User object
+    const user = await User.findById(req.user.id).select("-password");
+    res.json(user);
+  } catch (err) {
+    res.status(500).send("Server Error");
+  }
 });
 
 module.exports = router;
