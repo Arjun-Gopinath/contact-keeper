@@ -8,6 +8,7 @@ const config = require("config");
 const auth = require("../middleware/auth");
 
 //public
+// Login a user
 router.post(
   "/",
   [
@@ -43,7 +44,7 @@ router.post(
         payload,
         config.get("jwtSecret"),
         {
-          expiresIn: 3600,
+          expiresIn: 36000,
         },
         (err, token) => {
           if (err) console.log(err);
@@ -58,6 +59,7 @@ router.post(
 );
 
 //private
+// Get Logged In User
 router.get("/", auth, async (req, res) => {
   try {
     // Select the user based on id and remove password from the User object

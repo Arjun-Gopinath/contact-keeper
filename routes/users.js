@@ -7,6 +7,7 @@ const User = require("../models/User");
 const config = require("config");
 
 //public
+// Add new user
 router.post(
   "/",
   [

@@ -6,6 +6,7 @@ const Contact = require("../models/Contact");
 const { check, validationResult } = require("express-validator");
 
 //private
+// Get a contact
 router.get("/", auth, async (req, res) => {
   try {
     // Find all contact user of that id and sort such that latest contacts comes first
@@ -20,6 +21,7 @@ router.get("/", auth, async (req, res) => {
 });
 
 //private
+// Add new contact
 router.post(
   "/",
   [auth, [check("name", "Name is required").not().isEmpty()]],
@@ -50,6 +52,7 @@ router.post(
 );
 
 //private
+// Update an existing contact
 router.put("/:id", auth, async (req, res) => {
   const { name, email, phone, type } = req.body;
 
@@ -84,6 +87,7 @@ router.put("/:id", auth, async (req, res) => {
 });
 
 //private
+// Delete a contact
 router.delete("/:id", auth, async (req, res) => {
   try {
     let contact = await Contact.findById(req.params.id);
