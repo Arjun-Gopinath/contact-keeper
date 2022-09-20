@@ -54,6 +54,10 @@
   line-height: 3.938rem;
   font-style: bold;
   vertical-align: center;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
 }
 
 .loginWindow .submit {
@@ -70,6 +74,10 @@
   line-height: 38px;
   text-align: center;
   margin-top: 3.875rem;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
 }
 
 .loginWindow a {
