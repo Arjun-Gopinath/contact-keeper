@@ -1,9 +1,9 @@
 import styles from "./App.css";
 import { Routes, Switch } from "react-router";
 import { BrowserRouter, Route } from "react-router-dom";
-import Login from "./components/Login";
-import Register from "./components/Register";
-import NotFound from "./components/NotFound";
+import Login from "./components/Login/Login";
+import Register from "./components/Register/Register";
+import NotFound from "./components/NotFound/NotFound";
 
 const App = () => {
   return (

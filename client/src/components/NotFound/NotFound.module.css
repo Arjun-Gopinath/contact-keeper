@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1&family=Roboto&display=swap");
+.container {
+  background-color: #6de4cf;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h1 {
+  color: #00434a;
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 3.125rem;
+  line-height: 3.938rem;
+  font-style: bold;
+  vertical-align: center;
+}
+
+.container p {
+  color: #00434a;
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.125rem;
+  line-height: 2.438rem;
+  font-style: bold;
+  vertical-align: center;
+}
