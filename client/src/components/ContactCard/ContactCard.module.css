@@ -1,0 +1,80 @@
+.card {
+  background-color: #9bf8cf;
+  width: fit-content;
+  border-radius: 1.875rem;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .contactDetails {
+  width: 22rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.card .contactDetails h1 {
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-style: bold;
+}
+
+.card .contactDetails h2 {
+  color: #00434a;
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.875rem;
+  font-style: bold;
+}
+.card .contactDetails p {
+  color: #00434a;
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  font-style: bold;
+}
+
+.card .editContact {
+  background-color: #6de4cf;
+  padding: 0;
+  width: 22rem;
+  height: 4.563rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.375rem 2.75rem 1.375rem 2.75rem;
+  border-radius: 1.875rem;
+}
+
+.card .editContact .editContactButton {
+  background-color: #6de4cf;
+  border-color: #6de4cf;
+  border-top-width: 0rem;
+  border-left-width: 0rem;
+  border-bottom-width: 0rem;
+  border-right-width: 0rem;
+  border-radius: 1.25rem;
+  padding: 0.625rem;
+}
+
+.card .contactDetails .contactType .icon {
+  color: #00434a;
+  width: 2rem;
+  height: 2rem;
+}
+
+.card .editContact .editContactButton:hover {
+  background-color: #9bf8cf;
+}
+
+.card .editContact .editContactButton .icon {
+  color: #00434a;
+  width: 2rem;
+  height: 2rem;
+}
