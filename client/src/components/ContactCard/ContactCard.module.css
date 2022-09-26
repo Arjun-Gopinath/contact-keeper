@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1&family=Roboto&display=swap");
 .card {
   background-color: #9bf8cf;
   width: fit-content;
@@ -11,6 +12,7 @@
 
 .card .contactDetails {
   width: 22rem;
+  height: 11.063rem;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -18,9 +20,13 @@
 }
 
 .card .contactDetails h1 {
+  color: #030101;
   font-family: "Gothic A1", sans-serif;
   font-family: "Roboto", sans-serif;
   font-size: 2.5rem;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+  margin: 0;
   font-style: bold;
 }
 
@@ -28,6 +34,9 @@
   color: #00434a;
   font-family: "Gothic A1", sans-serif;
   font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
   font-size: 1.875rem;
   font-style: bold;
 }
@@ -35,6 +44,9 @@
   color: #00434a;
   font-family: "Gothic A1", sans-serif;
   font-family: "Roboto", sans-serif;
+  padding-top: 0.5rem;
+  padding-left: 1.5rem;
+  margin: 0;
   font-size: 1.25rem;
   font-style: bold;
 }
@@ -48,23 +60,23 @@
   justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
-  padding: 1.375rem 2.75rem 1.375rem 2.75rem;
   border-radius: 1.875rem;
 }
 
 .card .editContact .editContactButton {
   background-color: #6de4cf;
-  border-color: #6de4cf;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0.25, 0.25));
   border-top-width: 0rem;
   border-left-width: 0rem;
   border-bottom-width: 0rem;
   border-right-width: 0rem;
-  border-radius: 1.25rem;
+  border-radius: 1.75rem;
   padding: 0.625rem;
 }
 
 .card .contactDetails .contactType .icon {
   color: #00434a;
+  padding-right: 1.5rem;
   width: 2rem;
   height: 2rem;
 }

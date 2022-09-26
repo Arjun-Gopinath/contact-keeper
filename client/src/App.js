@@ -4,7 +4,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
 import NotFound from "./components/NotFound/NotFound";
-import ContactCard from "./components/ContactCard/ContactCard";
+import Home from "./components/Home/Home";
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
         <Routes>
           <Route exact path="/login" element={<Login />}></Route>
           <Route exact path="/register" element={<Register />}></Route>
-          <Route exact path="/contact" element={<ContactCard />}></Route>
+          <Route exact path="/contact" element={<Home />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </BrowserRouter>

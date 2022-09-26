@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1&family=Roboto&display=swap");
+.container {
+  background-color: #6de4cf;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contacts {
+  background-color: #ffffff;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5rem 0 0 0;
+}
+
+.contacts h1 {
+  color: #00434a;
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 3.125rem;
+  line-height: 3.938rem;
+  font-style: bold;
+  vertical-align: center;
+}
+
+.contacts .search input {
+  background: url("https://static.thenounproject.com/png/5191664-200.png")
+    no-repeat 10px 13px;
+  background-size: 20px;
+  background-color: #e7f7f6;
+  border: none;
+  background-repeat: no-repeat;
+  width: 45.75rem;
+  padding: 12px 20px 12px 40px;
+  border: 2px solid #00434a;
+  margin-bottom: 12px;
+  border-radius: 1.875rem;
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.loginWindow {
+  background-color: #6de4cf;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

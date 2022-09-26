@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1&family=Roboto&display=swap");
+.container {
+  background-color: #6de4cf;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  background-color: #9bf8cf;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5rem 0 0 0;
+}
+
+.logo h1 {
+  color: #00434a;
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 3.125rem;
+  line-height: 3.938rem;
+  font-style: bold;
+  vertical-align: center;
+}
+
+.editContact {
+  background-color: #6de4cf;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.editContact .input {
+  fill: #e7f7f6;
+  width: 25rem;
+  height: 3.125rem;
+  border-radius: 1.25rem;
+  margin-bottom: 1.313rem;
+  border-color: #6de4cf;
+  text-align: left;
+  padding-left: 2rem;
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 3.938rem;
+  font-style: bold;
+  vertical-align: center;
+  border-width: 0 0 0 0;
+}
+
+.container .editContact .contactButtons {
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container .editContact .contactButtons .submit {
+  color: #ffffff;
+  width: 18.75rem;
+  height: 3.75rem;
+  background: #00434a;
+  border-color: #6de4cf;
+  border-radius: 20px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  margin-top: 3.875rem;
+  border-width: 0 0 0 0;
+}
+
+.container .editContact .contactButtons .cancel {
+  color: #030101;
+  width: 18.75rem;
+  height: 3.75rem;
+  background: #e7f7f6;
+  border-radius: 20px;
+  font-family: "Gothic A1";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  margin-top: 3.875rem;
+  border-width: 0 0 0 0;
+}
+
+.container .editContact .contactType {
+  margin-top: 10px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container .editContact .contactTypeInput {
+  background-color: #6de4cf;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0.25, 0.25));
+  border-width: 0 0 0 0;
+  border-radius: 1.75rem;
+  padding: 0.625rem;
+}
+
+.container .editContact .contactTypeInput:hover {
+  background-color: #9bf8cf;
+}
+
+.container .editContact .contactTypeInput .icon {
+  color: #00434a;
+  width: 2rem;
+  height: 2rem;
+}
