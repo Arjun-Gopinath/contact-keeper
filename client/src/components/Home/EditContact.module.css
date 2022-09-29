@@ -59,7 +59,7 @@
 }
 
 .container .editContact .contactButtons {
-  width: 40vw;
+  width: 35vw;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -101,7 +101,7 @@
 
 .container .editContact .contactType {
   margin-top: 10px;
-  width: 200px;
+  width: 150px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;

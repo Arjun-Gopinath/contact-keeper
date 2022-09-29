@@ -19,7 +19,7 @@ const Home = () => {
             title="Type contact name..."
           />
         </div>
-        <div>
+        <div className={styles.contactCards}>
           <ContactCard />
           <ContactCard />
         </div>
