@@ -1,22 +1,26 @@
-import React, { useState } from "react";
-import { Navigate } from "react-router-dom";
-import styles from "./Login.module.css";
-import Logo from "../../assets/Logo.png";
-import { handleLogin } from "../../hooks/auth";
+import React, { useEffect, useState } from 'react';
+import Logo from '../../assets/Logo.png';
+import { handleLogin } from '../../hooks/auth';
+import { getToken, handleNavigation } from '../../hooks/utils';
+import styles from './Login.module.css';
 
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  useEffect(() => {
+    if (getToken()) setIsLoggedIn(true);
+  }, []);
+
   return (
     <div className={styles.container}>
-      {isLoggedIn && <Navigate to="/contact" replace={true} />}
+      {isLoggedIn && handleNavigation('/contact')}
       <div className={styles.loginWindow}>
         <input
           className={styles.input}
-          type="text"
-          name="Email"
-          placeholder="Email"
+          type='text'
+          name='Email'
+          placeholder='Email'
           value={email}
           onChange={(e) => {
             setEmail(e.target.value);
@@ -24,9 +28,9 @@ const Login = () => {
         />
         <input
           className={styles.input}
-          type="text"
-          name="Password"
-          placeholder="Password"
+          type='password'
+          name='Password'
+          placeholder='Password'
           value={password}
           onChange={(e) => {
             setPassword(e.target.value);
@@ -34,19 +38,18 @@ const Login = () => {
         />
         <button
           className={styles.submit}
-          type="submit"
+          type='submit'
           onClick={() => {
             handleLogin({ email, password });
-            if (localStorage.getItem("token")) setIsLoggedIn(true);
-            else setIsLoggedIn(false);
+            setIsLoggedIn(true);
           }}
         >
           Login
         </button>
-        <a href="/register">New user? Register</a>
+        <a href='/register'>New user? Register</a>
       </div>
       <div className={styles.logo}>
-        <img src={Logo} alt="Contact Keeper Logo" />
+        <img src={Logo} alt='Contact Keeper Logo' />
         <h1>Contact Keeper</h1>
       </div>
     </div>

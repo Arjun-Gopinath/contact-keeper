@@ -1,9 +1,10 @@
-import axios from "axios";
+import axios from 'axios';
+import { setToken } from './utils';
 
 export const handleLogin = async (userCredentials) => {
   await axios
-    .post("http://localhost:8000/api/auth", userCredentials)
+    .post('http://localhost:8000/api/auth', userCredentials)
     .then((res) => {
-      localStorage.setItem("token", res.data.token);
+      setToken(res.data.token);
     });
 };
