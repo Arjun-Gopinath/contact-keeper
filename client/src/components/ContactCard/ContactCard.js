@@ -7,18 +7,21 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import styles from "./ContactCard.module.css";
 
-const ContactCard = () => {
+const ContactCard = ({ contact }) => {
   return (
     <div className={styles.card}>
+      {console.log(contact)}
       <div className={styles.contactDetails}>
         <div className={styles.contactInfo}>
-          <h1>David</h1>
-          <h2>778-870-6791</h2>
-          <p>david@gmail.com</p>
+          <h1>{contact.name}</h1>
+          <h2>{contact.phone}</h2>
+          <p>{contact.email}</p>
         </div>
-        <div className={styles.contactType}>
-          <FontAwesomeIcon className={styles.icon} icon={faHome} />
-        </div>
+        {contact.type === "Personal" && (
+          <div className={styles.contactType}>
+            <FontAwesomeIcon className={styles.icon} icon={faHome} />
+          </div>
+        )}
       </div>
       <div className={styles.editContact}>
         <button className={styles.editContactButton}>
